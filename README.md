@@ -37,7 +37,7 @@ gcc browser.c -o browser $(pkg-config --cflags --libs gtk4 webkitgtk-6.0) -Wall 
 ./browser --url https://example.com
 
 # Full usage with all parameters
-./browser --url https://example.com --title "My Browser" --size 1200x800
+./browser --url https://example.com --title "Single-window Browser" --size 1200x800
 
 # Custom size only
 ./browser --url https://example.com --size 1600x900
