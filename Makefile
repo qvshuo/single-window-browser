@@ -1,9 +1,9 @@
-# Define CFLAGS using pkg-config for GTK4 and WebKitGTK
+# 使用 pkg-config 为 GTK4 和 WebKitGTK 定义 CFLAGS
 CFLAGS := $(shell pkg-config --cflags --libs gtk4 webkitgtk-6.0)
 
-# Additional compiler flags
+# 额外的编译器标志
 CFLAGS += -Wall -Wextra -O2
 
-# Target for building the browser
+# 构建浏览器的目标
 browser: browser.c
 	gcc browser.c -o browser $(CFLAGS)
