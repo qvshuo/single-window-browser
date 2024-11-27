@@ -123,7 +123,7 @@ int main(int argc, char **argv)
     }
 
     /* Create application instance */
-    GtkApplication *app = gtk_application_new("org.gtk.one-window-browser",
+    GtkApplication *app = gtk_application_new("org.gtk.single-window-browser",
                                             G_APPLICATION_DEFAULT_FLAGS);
     if (!app) {
         g_critical("Failed to create application");
