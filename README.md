@@ -33,7 +33,12 @@ gcc browser.c -o browser $(pkg-config --cflags --libs gtk4 webkitgtk-6.0) -Wall 
 ## Usage
 
 ```sh
-./browser https://example.com  # Usage example
-./browser                      # Display usage instructions
-./browser example.com          # Show URL format error message
+# Basic usage with URL only
+./browser --url https://example.com
+
+# Full usage with all parameters
+./browser --url https://example.com --title "My Browser" --size 1200x800
+
+# Custom size only
+./browser --url https://example.com --size 1600x900
 ```
